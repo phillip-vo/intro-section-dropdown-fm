@@ -1,0 +1,125 @@
+.app__hero-mobile {
+    width: 100%;
+    text-align: center;
+
+    background-color: var(--almost-white);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    h1 {
+        color: var(--almost-black);
+        margin-top:3rem;
+    }
+
+    p {
+        color: var(--medium-gray);
+        margin: 1.5rem 1.5rem; 
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    button {
+        height: 50px;
+        color: var(--almost-white);
+        background-color: var(--almost-black);
+
+        padding: 1rem 2rem;
+
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 700;
+
+        &:hover {
+            color: var(--almost-black);
+            background-color: var(--almost-white);
+            border: 2px solid var(--almost-black);
+        }
+
+    }
+}
+
+.app__hero-clients-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5rem;
+
+    margin: 4rem 0;
+
+    img {
+       width: 70px;
+    }
+}
+
+.app__hero-desktop {
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h1 {
+            font-size: 5rem;
+            color: var(--almost-black)
+        }
+
+        p {
+            color: var(--medium-gray);
+            width: 60%;
+            margin-top: 3rem;
+            line-height: 2;
+            font-weight: 500;
+        }
+
+        button {
+            width: 165px;
+            height: 60px;
+            color: var(--almost-white);
+            background-color: var(--almost-black);
+            
+            margin-top: 3rem;
+            padding: 1rem 2rem;
+    
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+    
+            &:hover {
+                color: var(--almost-black);
+                background-color: var(--almost-white);
+                border: 2px solid var(--almost-black);
+            }
+    
+        }
+    }
+
+    img {
+        width: 500px;
+    }
+
+    .app__hero-clients-desktop {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+
+        margin-top: 7rem;
+    
+        img {
+           width: 100px;
+        }
+    }
+
+}
+

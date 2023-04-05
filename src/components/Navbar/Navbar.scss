@@ -1,0 +1,285 @@
+.app__navbar {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 2.5rem;
+
+}
+
+.app__navbar-logo {
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+
+    img {
+        width: 100px;
+    }
+    
+}
+
+.app__navbar-mobile-menu {
+    position: relative
+
+    img {
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.app__navbar-mobile-panel{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 2rem 1.5rem;
+
+    width: 70%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    div {
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+
+        background-color: white;
+
+        img {
+            width: 35px;
+            height: 35px;
+            background-color: white;
+
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        background-color: white;
+
+        li {
+            margin-top: 2rem;
+            background-color: white;
+
+            a {
+                color: var(--medium-gray);
+                text-transform: capitalize;
+                text-decoration: none;
+                font-weight: 500;
+                background-color: white;
+            }
+        }
+    }
+}
+
+.app__navbar-features, .app__navbar-company {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+   span {
+    color: var(--medium-gray);
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    background-color: white;
+
+    img {
+        width: 15px;
+        height: 10px;
+    }
+   }
+}
+
+.app__navbar-featureslist-mobile, .app__navbar-companylist-mobile {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        padding-left: 1.5rem;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.app__navbar-cta {
+    width: 100%;
+    padding-top: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    button {
+        color: var(--medium-gray);
+
+        font-size: 1rem;
+        font-weight: 500;
+
+        cursor: pointer;
+    }
+
+    .app__navbar-login {
+        border: none;
+        background-color: white;
+    }
+
+    .app__navbar-register {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 15px;
+        background-color: var(--almost-white);
+
+        &:hover {
+            color: white;
+            background-color: var(--almost-black)
+        }
+    }
+}
+
+.app__navbar-menu-icon {
+    cursor: pointer;
+}
+
+.app__navbar-desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .app__navbar-desktop-links {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+
+        span {
+            background-color: var(--almost-white);
+        }
+
+
+        li {
+
+            a {
+                color: var(--medium-gray);
+                text-transform: capitalize;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .app__navbar-desktop-cta {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+
+        button {
+            color: var(--medium-gray);
+    
+            font-size: 1rem;
+            font-weight: 500;
+    
+            cursor: pointer;
+        }
+        
+        .app__navbar-desktop-login {
+            border: none;
+        }
+
+        .app__navbar-desktop-register {
+            width: 100px;
+            padding: .75rem;
+            border-radius: 15px;
+            background-color: var(--almost-white);
+
+            &:hover {
+                color: white;
+                background-color: var(--almost-black)
+            }
+        }
+
+
+    }
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.app__navbar-featureslist-desktop, .app__navbar-companylist-desktop  {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+
+    padding: 2rem;
+
+    border-radius: 15px;;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+
+    li {
+        background-color: white;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: white;
+    
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.app__navbar-companylist-desktop {
+    width: 140px;
+    left: 0;
+    
+    li {
+        width: 100%;
+    }
+}
